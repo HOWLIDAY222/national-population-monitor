@@ -12,3 +12,4 @@ raw-storage/*
 !raw-storage/.gitkeep
 monitoring/*.jsonl
 backups/
+.site-publish/

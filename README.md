@@ -5,11 +5,12 @@
 ## 公开访问
 
 - 源码仓库：https://github.com/HOWLIDAY222/national-population-monitor
-- 网页演示：https://howliday222.github.io/national-population-monitor/
+- 网页演示：https://population-monitor-howliday222.hrcyu522.chatgpt.site/
+- GitHub Pages 备用地址（需先启用）：https://howliday222.github.io/national-population-monitor/
 
-GitHub Pages 部署的是静态演示版，使用内置演示数据展示地图、分析、回放及巡航功能，不运行 Node.js 采集服务，也不宣称实时更新官方统计数据。完整数据采集、审核及 SSE 功能需要按下文运行后端。
+公开网站由 Sites 托管静态演示版，使用内置演示数据展示地图、分析、回放及巡航功能，不运行 Node.js 采集服务，也不宣称实时更新官方统计数据。完整数据采集、审核及 SSE 功能需要按下文运行后端。
 
-推送 `main` 分支会触发 `.github/workflows/deploy-pages.yml`。首次部署需在仓库 **Settings → Pages → Source** 选择 **GitHub Actions**。
+推送 `main` 分支会触发 `.github/workflows/deploy-pages.yml`，运行前端测试和静态构建。启用 Pages 后也会自动部署 GitHub Pages；未启用时跳过部署。首次开启需在仓库 **Settings → Pages → Source** 选择 **GitHub Actions**，然后在 Actions 中手动运行此工作流。
 
 本地构建静态演示版：
 

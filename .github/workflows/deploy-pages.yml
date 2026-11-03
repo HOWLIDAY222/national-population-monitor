@@ -17,6 +17,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      pages_enabled: ${{ steps.pages-check.outputs.enabled }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -35,21 +37,39 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Test frontend data model
+        run: pnpm test:web
+
       - name: Build static public dashboard
         env:
           VITE_PUBLIC_BASE: ./
           VITE_STATIC_PUBLISH: "true"
         run: pnpm build
 
+      - name: Check whether GitHub Pages is enabled
+        id: pages-check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh api "repos/${GITHUB_REPOSITORY}/pages" --silent 2>/dev/null; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "Build passed. Pages is not enabled; enable GitHub Actions in Settings > Pages, then rerun this workflow." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
       - name: Configure GitHub Pages
+        if: steps.pages-check.outputs.enabled == 'true'
         uses: actions/configure-pages@v5
 
       - name: Upload Pages artifact
+        if: steps.pages-check.outputs.enabled == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
   deploy:
+    if: needs.build.outputs.pages_enabled == 'true'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
