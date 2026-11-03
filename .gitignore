@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.vite/
+*.log
+.DS_Store
+server/.local-data/
+server/.env
+.env
+.env.*
+!.env.example
+raw-storage/*
+!raw-storage/.gitkeep
+monitoring/*.jsonl
+backups/
