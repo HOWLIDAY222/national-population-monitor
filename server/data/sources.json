@@ -1,0 +1,1046 @@
+[
+  {
+    "id": "nbs-2025-national-bulletin",
+    "name": "中华人民共和国2025年国民经济和社会发展统计公报",
+    "institution": "国家统计局",
+    "url": "https://www.stats.gov.cn/xxgk/sjfb/tjgb2020/202602/t20260228_1962662.html",
+    "kind": "html",
+    "parserType": "nbs-national-bulletin",
+    "parserVersion": "nbs-bulletin-v1",
+    "checkIntervalSeconds": 1800,
+    "enabled": true,
+    "autoPublish": false,
+    "datasetKey": "national-year-end",
+    "period": "2025",
+    "effectiveAt": "2025-12-31T23:59:59+08:00",
+    "sourcePublishedAt": "2026-02-28T09:30:00+08:00",
+    "dataStatus": "official",
+    "request": {
+      "timeoutMs": 20000,
+      "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+    }
+  },
+  {
+    "id": "nbs-2025-sample-survey",
+    "name": "2025年全国1%人口抽样调查主要数据公报",
+    "institution": "国家统计局",
+    "url": "https://www.stats.gov.cn/sj/zxfbhjd/202605/t20260522_1963788.html",
+    "kind": "html",
+    "parserType": "nbs-sample-survey",
+    "parserVersion": "nbs-sample-survey-v1",
+    "checkIntervalSeconds": 1800,
+    "enabled": true,
+    "autoPublish": false,
+    "datasetKey": "national-sample-survey",
+    "period": "2025-11-01",
+    "effectiveAt": "2025-11-01T00:00:00+08:00",
+    "sourcePublishedAt": "2026-05-22T10:00:00+08:00",
+    "dataStatus": "survey",
+    "request": {
+      "timeoutMs": 20000,
+      "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+    }
+  },
+  {
+    "id": "nbs-sixth-census-provinces",
+    "name": "2010年第六次全国人口普查主要数据公报（第2号）—分地区常住人口",
+    "institution": "国家统计局",
+    "url": "https://www.stats.gov.cn/sj/tjgb/rkpcgb/qgrkpcgb/202302/t20230206_1901998.html",
+    "kind": "html",
+    "parserType": "nbs-sixth-census-provinces",
+    "parserVersion": "nbs-sixth-census-provinces-v1",
+    "checkIntervalSeconds": 86400,
+    "enabled": true,
+    "autoPublish": false,
+    "datasetKey": "sixth-census-province-population",
+    "period": "2010-11-01",
+    "effectiveAt": "2010-11-01T00:00:00+08:00",
+    "sourcePublishedAt": "2011-04-29T10:00:00+08:00",
+    "dataStatus": "official",
+    "request": {
+      "timeoutMs": 20000,
+      "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+    },
+    "parserConfig": {
+      "expectedNationalPopulationTotal": 1339724852,
+      "excludedPopulationTotal": 6949985,
+      "expectedProvincePopulationTotal": 1332774867
+    }
+  },
+  {
+    "id": "nbs-seventh-census-provinces",
+    "name": "第七次全国人口普查公报（第三号）—地区人口情况",
+    "institution": "国家统计局",
+    "url": "https://www.stats.gov.cn/zt_18555/zdtjgz/zgrkpc/dqcrkpc/ggl/202302/t20230215_1903999.html",
+    "kind": "html",
+    "parserType": "nbs-seventh-census-provinces",
+    "parserVersion": "nbs-seventh-census-provinces-v1",
+    "checkIntervalSeconds": 86400,
+    "enabled": true,
+    "autoPublish": false,
+    "datasetKey": "seventh-census-province-population",
+    "period": "2020-11-01",
+    "effectiveAt": "2020-11-01T00:00:00+08:00",
+    "sourcePublishedAt": "2021-05-11T10:00:00+08:00",
+    "dataStatus": "official",
+    "request": {
+      "timeoutMs": 20000,
+      "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+    },
+    "parserConfig": {
+      "expectedProvincePopulationTotal": 1409778724
+    }
+  },
+  {
+      "id": "province-portal-110000",
+      "name": "北京市统计局门户",
+      "institution": "北京市统计局",
+      "url": "https://tjj.beijing.gov.cn/",
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "110000",
+      "regionName": "北京市",
+      "initialDelaySeconds": 900,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-120000",
+      "name": "天津市统计局门户",
+      "institution": "天津市统计局",
+      "url": "https://stats.tj.gov.cn/",
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "120000",
+      "regionName": "天津市",
+      "initialDelaySeconds": 3600,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-130000",
+      "name": "河北省统计局门户",
+      "institution": "河北省统计局",
+      "url": "https://tjj.hebei.gov.cn/hbstjj/sj/tjgb/",
+      "fallbackUrls": ["https://tjj.hebei.gov.cn/"],
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "130000",
+      "regionName": "河北省",
+      "initialDelaySeconds": 6300,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-140000",
+      "name": "山西省统计局门户",
+      "institution": "山西省统计局",
+      "url": "https://tjj.shanxi.gov.cn/",
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "140000",
+      "regionName": "山西省",
+      "initialDelaySeconds": 9000,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-150000",
+      "name": "内蒙古自治区统计局门户",
+      "institution": "内蒙古自治区统计局",
+      "url": "https://tj.nmg.gov.cn/tjyw/tjgb/",
+      "fallbackUrls": ["https://tj.nmg.gov.cn/"],
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "150000",
+      "regionName": "内蒙古自治区",
+      "initialDelaySeconds": 11700,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-210000",
+      "name": "辽宁省统计局门户",
+      "institution": "辽宁省统计局",
+      "url": "https://tjj.ln.gov.cn/",
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "210000",
+      "regionName": "辽宁省",
+      "initialDelaySeconds": 14400,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-220000",
+      "name": "吉林省统计局门户",
+      "institution": "吉林省统计局",
+      "url": "https://tjj.jl.gov.cn/tjsj/tjgb/ndgb/",
+      "fallbackUrls": ["https://tjj.jl.gov.cn/"],
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "220000",
+      "regionName": "吉林省",
+      "initialDelaySeconds": 17100,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-230000",
+      "name": "黑龙江省统计局门户",
+      "institution": "黑龙江省统计局",
+      "url": "https://tjj.hlj.gov.cn/",
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "230000",
+      "regionName": "黑龙江省",
+      "initialDelaySeconds": 19800,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-310000",
+      "name": "上海市统计局门户",
+      "institution": "上海市统计局",
+      "url": "https://tjj.sh.gov.cn/tjgb/index.html",
+      "fallbackUrls": ["https://tjj.sh.gov.cn/"],
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "310000",
+      "regionName": "上海市",
+      "initialDelaySeconds": 22500,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-320000",
+      "name": "江苏省统计局门户",
+      "institution": "江苏省统计局",
+      "url": "https://tj.jiangsu.gov.cn/col/col85764/index.html",
+      "fallbackUrls": ["https://tj.jiangsu.gov.cn/"],
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "320000",
+      "regionName": "江苏省",
+      "initialDelaySeconds": 25200,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-330000",
+      "name": "浙江省统计局门户",
+      "institution": "浙江省统计局",
+      "url": "https://tjj.zj.gov.cn/col/col1229129205/index.html",
+      "fallbackUrls": ["https://tjj.zj.gov.cn/"],
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "330000",
+      "regionName": "浙江省",
+      "initialDelaySeconds": 27900,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-340000",
+      "name": "安徽省统计局门户",
+      "institution": "安徽省统计局",
+      "url": "https://tjj.ah.gov.cn/ssah/qwfbjd/tjgb/index.html",
+      "fallbackUrls": ["https://tjj.ah.gov.cn/"],
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "340000",
+      "regionName": "安徽省",
+      "initialDelaySeconds": 30600,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-350000",
+      "name": "福建省统计局门户",
+      "institution": "福建省统计局",
+      "url": "https://tjj.fujian.gov.cn/",
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "350000",
+      "regionName": "福建省",
+      "initialDelaySeconds": 33300,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-360000",
+      "name": "江西省统计局门户",
+      "institution": "江西省统计局",
+      "url": "https://tjj.jiangxi.gov.cn/",
+      "fallbackUrls": ["http://tjj.jiangxi.gov.cn/"],
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "360000",
+      "regionName": "江西省",
+      "initialDelaySeconds": 36000,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-370000",
+      "name": "山东省统计局门户",
+      "institution": "山东省统计局",
+      "url": "https://tjj.shandong.gov.cn/",
+      "fallbackUrls": ["http://tjj.shandong.gov.cn/"],
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "370000",
+      "regionName": "山东省",
+      "initialDelaySeconds": 38700,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-410000",
+      "name": "河南省统计局门户",
+      "institution": "河南省统计局",
+      "url": "https://tjj.henan.gov.cn/",
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "410000",
+      "regionName": "河南省",
+      "initialDelaySeconds": 41400,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-420000",
+      "name": "湖北省统计局门户",
+      "institution": "湖北省统计局",
+      "url": "https://tjj.hubei.gov.cn/",
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "420000",
+      "regionName": "湖北省",
+      "initialDelaySeconds": 44100,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-430000",
+      "name": "湖南省统计局门户",
+      "institution": "湖南省统计局",
+      "url": "https://tjj.hunan.gov.cn/",
+      "fallbackUrls": ["http://tjj.hunan.gov.cn/"],
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "430000",
+      "regionName": "湖南省",
+      "initialDelaySeconds": 46800,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-440000",
+      "name": "广东省统计局门户",
+      "institution": "广东省统计局",
+      "url": "https://stats.gd.gov.cn/",
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "440000",
+      "regionName": "广东省",
+      "initialDelaySeconds": 49500,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-450000",
+      "name": "广西壮族自治区统计局门户",
+      "institution": "广西壮族自治区统计局",
+      "url": "https://tjj.gxzf.gov.cn/",
+      "fallbackUrls": ["http://tjj.gxzf.gov.cn/"],
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "450000",
+      "regionName": "广西壮族自治区",
+      "initialDelaySeconds": 52200,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-460000",
+      "name": "海南省统计局门户",
+      "institution": "海南省统计局",
+      "url": "https://stats.hainan.gov.cn/",
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "460000",
+      "regionName": "海南省",
+      "initialDelaySeconds": 54900,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-500000",
+      "name": "重庆市统计局门户",
+      "institution": "重庆市统计局",
+      "url": "https://tjj.cq.gov.cn/",
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "500000",
+      "regionName": "重庆市",
+      "initialDelaySeconds": 57600,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-510000",
+      "name": "四川省统计局门户",
+      "institution": "四川省统计局",
+      "url": "https://tjj.sc.gov.cn/",
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "510000",
+      "regionName": "四川省",
+      "initialDelaySeconds": 60300,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-520000",
+      "name": "贵州省统计局门户",
+      "institution": "贵州省统计局",
+      "url": "https://stjj.guizhou.gov.cn/",
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "520000",
+      "regionName": "贵州省",
+      "initialDelaySeconds": 63000,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-530000",
+      "name": "云南省统计局门户",
+      "institution": "云南省统计局",
+      "url": "https://stats.yn.gov.cn/zwgk/zfxxgk/fdzdgknr/tjsj/tjgb/",
+      "fallbackUrls": ["https://stats.yn.gov.cn/"],
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "530000",
+      "regionName": "云南省",
+      "initialDelaySeconds": 65700,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-540000",
+      "name": "西藏自治区统计局门户",
+      "institution": "西藏自治区统计局",
+      "url": "https://tjj.xizang.gov.cn/",
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "540000",
+      "regionName": "西藏自治区",
+      "initialDelaySeconds": 68400,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-610000",
+      "name": "陕西省统计局门户",
+      "institution": "陕西省统计局",
+      "url": "https://tjj.shaanxi.gov.cn/",
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "610000",
+      "regionName": "陕西省",
+      "initialDelaySeconds": 71100,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-620000",
+      "name": "甘肃省统计局门户",
+      "institution": "甘肃省统计局",
+      "url": "https://tjj.gansu.gov.cn/",
+      "fallbackUrls": ["https://ydyl.gansu.gov.cn/gsydyl/news/gsdt/"],
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "620000",
+      "regionName": "甘肃省",
+      "initialDelaySeconds": 73800,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html",
+        "seedResources": [
+          {
+            "title": "2025年甘肃省国民经济和社会发展统计公报",
+            "resourceUrl": "https://ydyl.gansu.gov.cn/gsydyl/news/gsdt/202603/t20260323_34819.html",
+            "resourceKind": "html"
+          }
+        ]
+      }
+    },
+    {
+      "id": "province-portal-630000",
+      "name": "青海省统计局门户",
+      "institution": "青海省统计局",
+      "url": "https://tjj.qinghai.gov.cn/",
+      "fallbackUrls": ["http://tjj.qinghai.gov.cn/"],
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "630000",
+      "regionName": "青海省",
+      "initialDelaySeconds": 76500,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-640000",
+      "name": "宁夏回族自治区统计局门户",
+      "institution": "宁夏回族自治区统计局",
+      "url": "https://tj.nx.gov.cn/",
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "640000",
+      "regionName": "宁夏回族自治区",
+      "initialDelaySeconds": 79200,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    {
+      "id": "province-portal-650000",
+      "name": "新疆维吾尔自治区统计局门户",
+      "institution": "新疆维吾尔自治区统计局",
+      "url": "https://tjj.xinjiang.gov.cn/tjj/tjgn/ist.shtml",
+      "fallbackUrls": ["https://tjj.xinjiang.gov.cn/"],
+      "kind": "html",
+      "parserType": "official-portal-monitor",
+      "parserVersion": "official-portal-monitor-v1",
+      "checkIntervalSeconds": 86400,
+      "enabled": true,
+      "autoPublish": false,
+      "role": "portal",
+      "monitorOnly": true,
+      "regionCode": "650000",
+      "regionName": "新疆维吾尔自治区",
+      "initialDelaySeconds": 81900,
+      "datasetKey": "province-portal-discovery",
+      "period": "continuous",
+      "effectiveAt": "2023-01-01T00:00:00+08:00",
+      "sourcePublishedAt": "2023-01-01T00:00:00+08:00",
+      "dataStatus": "official",
+      "request": {
+        "timeoutMs": 20000,
+        "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)"
+      },
+      "parserConfig": {
+        "catalogReferenceUrl": "https://www.stats.gov.cn/zs/tjws/tjzn/202301/t20230101_1903751.html"
+      }
+    },
+    { "id": "province-annual-110000-2025", "name": "北京市2025年国民经济和社会发展统计公报", "institution": "北京市统计局 国家统计局北京调查总队", "url": "https://tjj.beijing.gov.cn/zxfbu/202603/t20260324_4564401.html", "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v1", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "110000", "regionName": "北京市", "datasetKey": "provincial-annual-population-110000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-03-25T10:00:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 1 } },
+    { "id": "province-annual-120000-2025", "name": "2025年天津市国民经济和社会发展统计公报", "institution": "天津市统计局 国家统计局天津调查总队", "url": "https://www.tj.gov.cn/sq/tjgb/202603/t20260327_7271193.html", "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v1", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "120000", "regionName": "天津市", "datasetKey": "provincial-annual-population-120000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-03-27T15:20:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 1 } },
+    { "id": "province-annual-130000-2025", "name": "河北省2025年国民经济和社会发展统计公报", "institution": "河北省统计局 国家统计局河北调查总队", "url": "https://tjj.hebei.gov.cn/hbstjj/sj/tjgb/101773197987906.html", "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v1", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "130000", "regionName": "河北省", "datasetKey": "provincial-annual-population-130000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-03-20T10:00:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 1 } },
+    { "id": "province-annual-140000-2025", "name": "山西省2025年国民经济和社会发展统计公报", "institution": "山西省统计局 国家统计局山西调查总队", "url": "https://tjj.shanxi.gov.cn/tjsj/sjxx/202603/t20260325_10086694.shtml", "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v1", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "140000", "regionName": "山西省", "datasetKey": "provincial-annual-population-140000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-03-25T10:00:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 1 } },
+    { "id": "province-annual-150000-2025", "name": "内蒙古自治区2025年国民经济和社会发展统计公报", "institution": "内蒙古自治区统计局 国家统计局内蒙古调查总队", "url": "https://tj.nmg.gov.cn/tjyw/tjgb/ndtjgb/202604/t20260409_2886936.html", "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v1", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "150000", "regionName": "内蒙古自治区", "datasetKey": "provincial-annual-population-150000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-04-09T10:00:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 1 } },
+    { "id": "province-annual-210000-2025", "name": "辽宁省2025年国民经济和社会发展统计公报", "institution": "辽宁省统计局 国家统计局辽宁调查总队", "url": "https://tjj.ln.gov.cn/tjj/articleFileDir/2026-03/31/7d0ebeac0ed3499da6e4aa0f94acf972/2026033115100327617.pdf", "kind": "pdf", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v1", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "210000", "regionName": "辽宁省", "datasetKey": "provincial-annual-population-210000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-03-31T15:10:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 30000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 1 } },
+    { "id": "province-annual-220000-2025", "name": "吉林省2025年国民经济和社会发展统计公报", "institution": "吉林省统计局 国家统计局吉林调查总队", "url": "https://tjj.jl.gov.cn/tjsj/tjgb/ndgb/202604/t20260427_3627028.html", "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v1", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "220000", "regionName": "吉林省", "datasetKey": "provincial-annual-population-220000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-04-27T10:00:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 1 } },
+    { "id": "province-annual-230000-2025", "name": "2025年黑龙江省国民经济和社会发展统计公报", "institution": "黑龙江省统计局 国家统计局黑龙江调查总队", "url": "https://tjj.hlj.gov.cn/tjj/c106779/202603/c00_31925539.shtml", "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v1", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "230000", "regionName": "黑龙江省", "datasetKey": "provincial-annual-population-230000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-03-31T17:03:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 1 } },
+    { "id": "province-annual-310000-2025", "name": "2025年上海市国民经济和社会发展统计公报", "institution": "上海市统计局 国家统计局上海调查总队", "url": "https://tjj.sh.gov.cn/tjgb/20260330/e0772941e8e041eaaad2df850b44ef98.html", "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v2", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "310000", "regionName": "上海市", "datasetKey": "provincial-annual-population-310000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-03-30T10:00:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 1 } },
+    { "id": "province-annual-320000-2025", "name": "2025年江苏省国民经济和社会发展统计公报", "institution": "江苏省统计局 国家统计局江苏调查总队", "url": "https://tj.jiangsu.gov.cn/art/2026/3/19/art_85764_11744302.html", "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v1", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "320000", "regionName": "江苏省", "datasetKey": "provincial-annual-population-320000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-03-19T06:00:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 1 } },
+    { "id": "province-annual-340000-2025", "name": "安徽省2025年国民经济和社会发展统计公报", "institution": "安徽省统计局 国家统计局安徽调查总队", "url": "https://tjj.ah.gov.cn/ssah/qwfbjd/tjgb/sjtjgb/150467631.html", "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v1", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "340000", "regionName": "安徽省", "datasetKey": "provincial-annual-population-340000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-03-20T10:00:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 1 } },
+    { "id": "province-annual-350000-2025", "name": "2025年福建省国民经济和社会发展统计公报", "institution": "福建省统计局 国家统计局福建调查总队", "url": "https://tjj.fujian.gov.cn/xxgk/tjgb/202603/t20260313_7109476.htm", "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v1", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "350000", "regionName": "福建省", "datasetKey": "provincial-annual-population-350000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-03-13T10:00:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 1 } },
+    { "id": "province-annual-370000-2025", "name": "2025年山东省国民经济和社会发展统计公报", "institution": "山东省统计局 国家统计局山东调查总队", "url": "https://tjj.shandong.gov.cn/art/2026/3/3/art_6196_10322526.html", "fallbackUrls": ["http://tjj.shandong.gov.cn/art/2026/3/3/art_6196_10322526.html"], "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v1", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "370000", "regionName": "山东省", "datasetKey": "provincial-annual-population-370000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-03-03T10:00:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 1 } },
+    { "id": "province-annual-420000-2025", "name": "湖北省2025年国民经济和社会发展统计公报", "institution": "湖北省统计局 国家统计局湖北调查总队", "url": "https://tjj.hubei.gov.cn/tjsj/tjgb/ndtjgb/qstjgb/202603/t20260318_5894639.shtml", "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v1", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "420000", "regionName": "湖北省", "datasetKey": "provincial-annual-population-420000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-03-18T10:02:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 1 } },
+    { "id": "province-annual-430000-2025", "name": "湖南省2025年国民经济和社会发展统计公报", "institution": "湖南省统计局 国家统计局湖南调查总队", "url": "https://tjj.hunan.gov.cn/hntj/tjfx/tjgb/jjfzgb/202603/t20260325_33940711.html", "fallbackUrls": ["http://tjj.hunan.gov.cn/hntj/tjfx/tjgb/jjfzgb/202603/t20260325_33940711.html"], "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v1", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "430000", "regionName": "湖南省", "datasetKey": "provincial-annual-population-430000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-03-25T10:00:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 1 } },
+    { "id": "province-annual-440000-2025", "name": "2025年广东省国民经济和社会发展统计公报", "institution": "广东省统计局 国家统计局广东调查总队", "url": "https://stats.gd.gov.cn/attachment/0/610/610053/4876564.pdf", "fallbackUrls": ["http://stats.gd.gov.cn/attachment/0/610/610053/4876564.pdf"], "kind": "pdf", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v3", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "440000", "regionName": "广东省", "datasetKey": "provincial-annual-population-440000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-03-20T10:00:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 30000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "expectedContentHash": "711675c7865c3768abb63cb38e915eea2daf6b869d5fe54a9e56062753e29711", "sourcePages": [2], "minimumRecords": 9, "verificationReferences": ["https://stats.gd.gov.cn/tjgb/content/post_4876564.html", "https://www.qb.gd.gov.cn/qwdt/content/post_1317873.html"], "imageOnlyRecords": [{ "indicatorCode": "province_population_total", "value": 12859, "rawValue": "表1 2025年年末常住人口：常住人口12859万人" }, { "indicatorCode": "province_urban_population", "value": 9847, "rawValue": "表1 其中城镇9847万人" }, { "indicatorCode": "province_rural_population", "value": 3012, "rawValue": "表1 乡村3012万人" }, { "indicatorCode": "province_urbanization_rate", "value": 76.58, "rawValue": "常住人口城镇化率76.58%" }, { "indicatorCode": "province_birth_population", "value": 100.3, "rawValue": "全年出生人口100.3万人" }, { "indicatorCode": "province_death_population", "value": 71.3, "rawValue": "死亡人口71.3万人" }, { "indicatorCode": "province_birth_rate", "value": 7.82, "rawValue": "出生率7.82‰" }, { "indicatorCode": "province_death_rate", "value": 5.56, "rawValue": "死亡率5.56‰" }, { "indicatorCode": "province_natural_growth_rate", "value": 2.26, "rawValue": "自然增长率2.26‰" }] } },
+    { "id": "province-annual-450000-2025", "name": "2025年广西壮族自治区国民经济和社会发展统计公报", "institution": "广西壮族自治区统计局 国家统计局广西调查总队", "url": "https://tjj.gxzf.gov.cn/tjsj/tjgb/qqgb/t27449418.shtml", "fallbackUrls": ["http://tjj.gxzf.gov.cn/tjsj/tjgb/qqgb/t27449418.shtml"], "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v1", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "450000", "regionName": "广西壮族自治区", "datasetKey": "provincial-annual-population-450000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-04-09T10:00:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 1 } },
+    { "id": "province-annual-500000-2025", "name": "2025年重庆市国民经济和社会发展统计公报", "institution": "重庆市统计局 国家统计局重庆调查总队", "url": "https://tjj.cq.gov.cn/zwgk_233/fdzdgknr/tjxx/sjzl_55471/tjgb_55472/202603/t20260326_15568538_wap.html", "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v1", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "500000", "regionName": "重庆市", "datasetKey": "provincial-annual-population-500000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-03-26T10:00:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 1 } },
+    { "id": "province-annual-520000-2025", "name": "贵州省2025年国民经济和社会发展统计公报", "institution": "贵州省统计局 国家统计局贵州调查总队", "url": "https://stjj.guizhou.gov.cn/tjsj/tjfbyjd/202604/t20260415_90011027.html", "fallbackUrls": ["http://stjj.guizhou.gov.cn/tjsj/tjfbyjd/202604/t20260415_90011027.html"], "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v1", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "520000", "regionName": "贵州省", "datasetKey": "provincial-annual-population-520000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-04-15T10:00:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 1 } },
+    { "id": "province-annual-530000-2025", "name": "云南省2025年国民经济和社会发展统计公报", "institution": "云南省统计局 国家统计局云南调查总队", "url": "https://stats.yn.gov.cn/zwgk/zfxxgk/fdzdgknr/tjsj/tjgb/202603/t20260331_3052712.html", "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v1", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "530000", "regionName": "云南省", "datasetKey": "provincial-annual-population-530000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-03-31T10:00:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 1 } },
+    { "id": "province-annual-540000-2025", "name": "2025年西藏自治区国民经济和社会发展统计公报", "institution": "西藏自治区统计局 国家统计局西藏调查总队", "url": "https://tjj.xizang.gov.cn/xxgk/tjxx/tjgb/202603/t20260331_532204.html", "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v1", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "540000", "regionName": "西藏自治区", "datasetKey": "provincial-annual-population-540000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-03-31T15:36:17+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 1 } },
+    { "id": "province-annual-620000-2025", "name": "2025年甘肃省国民经济和社会发展统计公报", "institution": "甘肃省统计局 国家统计局甘肃调查总队", "url": "https://ydyl.gansu.gov.cn/gsydyl/news/gsdt/202603/t20260323_34819.html", "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v1", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "620000", "regionName": "甘肃省", "datasetKey": "provincial-annual-population-620000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-03-23T10:00:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 1 } },
+    { "id": "province-annual-330000-2025", "name": "2025年浙江省国民经济和社会发展统计公报", "institution": "浙江省统计局 国家统计局浙江调查总队", "url": "https://zjzd.stats.gov.cn/zwgk/zfxxgkml/tjxx/tjgb/art/2026/art_48c3c7315981425f9c25b53eab4d65d0.html", "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v1", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "330000", "regionName": "浙江省", "datasetKey": "provincial-annual-population-330000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-03-04T10:00:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 7 } },
+    { "id": "province-annual-360000-2025", "name": "江西省2025年国民经济和社会发展统计公报", "institution": "江西省统计局 国家统计局江西调查总队", "url": "https://jiangxi.jxnews.com.cn/system/2026/03/26/031086616.shtml", "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v3", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "360000", "regionName": "江西省", "datasetKey": "provincial-annual-population-360000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-03-27T04:46:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "encoding": "gb18030", "minimumRecords": 8, "indicatorPatterns": { "province_urbanization_rate": ["常住人口城镇化率[^\\d]{0,10}([\\d.]+)\\s*%"] } } },
+    { "id": "province-annual-410000-2025", "name": "2025年河南省国民经济和社会发展统计公报", "institution": "河南省统计局 国家统计局河南调查总队", "url": "https://tjj.henan.gov.cn/2026/04-09/3341308.html", "fallbackUrls": ["http://tjj.henan.gov.cn/2026/04-09/3341308.html"], "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v1", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "410000", "regionName": "河南省", "datasetKey": "provincial-annual-population-410000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-04-16T10:00:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 5 } },
+    { "id": "province-annual-460000-2025", "name": "2025年海南省国民经济和社会发展统计公报", "institution": "海南省统计局 国家统计局海南调查总队", "url": "https://news.hndaily.cn/html/2026-02/25/content_58468_19318306.htm", "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v1", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "460000", "regionName": "海南省", "datasetKey": "provincial-annual-population-460000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-02-25T10:00:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 2 } },
+    { "id": "province-annual-510000-2025", "name": "2025年四川省国民经济和社会发展统计公报", "institution": "四川省统计局 国家统计局四川调查总队", "url": "https://www.sczgb.org.cn/sys-nd/3969.html", "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v1", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "510000", "regionName": "四川省", "datasetKey": "provincial-annual-population-510000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-03-17T09:17:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 9, "verificationReferences": ["https://www.sc.gov.cn/"] } },
+    { "id": "province-annual-610000-2025", "name": "2025年陕西省国民经济和社会发展统计公报", "institution": "陕西省统计局 国家统计局陕西调查总队", "url": "https://www.shaanxi.gov.cn/xw/sxyw/202604/t20260415_3630026.html", "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v1", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "610000", "regionName": "陕西省", "datasetKey": "provincial-annual-population-610000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-04-15T10:00:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 7 } },
+    { "id": "province-annual-630000-2025", "name": "青海省2025年国民经济和社会发展统计公报", "institution": "青海省统计局 国家统计局青海调查总队", "url": "http://tjj.qinghai.gov.cn/tjData/yearBulletin/202603/P020260302663152872943.doc", "kind": "doc", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v3", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "630000", "regionName": "青海省", "datasetKey": "provincial-annual-population-630000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-03-02T10:00:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 30000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "expectedContentHash": "7907b8ba53d704bafc2909c30dc9311656b76ccbc661433474578eb671bf75a1", "minimumRecords": 7, "verificationReferences": ["https://tjj.qinghai.gov.cn/tjData/yearBulletin/202603/P020260302663152872943.doc"], "manualRecords": [{ "indicatorCode": "province_population_total", "value": 592, "rawValue": "年末常住人口592万人" }, { "indicatorCode": "province_urban_population", "value": 383, "rawValue": "城镇人口383万人" }, { "indicatorCode": "province_rural_population", "value": 209, "rawValue": "乡村人口209万人" }, { "indicatorCode": "province_urbanization_rate", "value": 64.7, "rawValue": "常住人口城镇化率64.7%" }, { "indicatorCode": "province_birth_rate", "value": 8.27, "rawValue": "人口出生率8.27‰" }, { "indicatorCode": "province_death_rate", "value": 7.59, "rawValue": "人口死亡率7.59‰" }, { "indicatorCode": "province_natural_growth_rate", "value": 0.68, "rawValue": "人口自然增长率0.68‰" }] } },
+    { "id": "province-annual-640000-2025", "name": "宁夏回族自治区2025年国民经济和社会发展统计公报", "institution": "宁夏回族自治区统计局 国家统计局宁夏调查总队", "url": "https://szb.nxrb.cn/nxrb/pad/con/202604/08/content_194869.html", "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v1", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "640000", "regionName": "宁夏回族自治区", "datasetKey": "provincial-annual-population-640000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-04-08T10:00:00+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 9, "verificationReferences": ["https://tj.nx.gov.cn/tjsj_htr/tjgb_htr/202604/t20260409_5213277.html"] } },
+    { "id": "province-annual-650000-2025", "name": "新疆维吾尔自治区2025年国民经济和社会发展统计公报", "institution": "新疆维吾尔自治区统计局 国家统计局新疆调查总队", "url": "https://www.aksxw.com/sy/rdxw/xj/202603/t20260320_33584769.html", "kind": "html", "parserType": "provincial-annual-bulletin", "parserVersion": "provincial-annual-bulletin-v2", "checkIntervalSeconds": 86400, "enabled": true, "autoPublish": false, "regionCode": "650000", "regionName": "新疆维吾尔自治区", "datasetKey": "provincial-annual-population-650000", "period": "2025", "effectiveAt": "2025-12-31T23:59:59+08:00", "sourcePublishedAt": "2026-03-20T14:07:49+08:00", "dataStatus": "official", "request": { "timeoutMs": 20000, "userAgent": "PopulationPlatformPublicDataMonitor/0.1 (+public statistical data monitoring)" }, "parserConfig": { "minimumRecords": 8, "indicatorPatterns": { "province_population_total": ["年末全疆常住人口\\s*([\\d,.]+)\\s*万人"] }, "verificationReferences": ["https://tjj.xinjiang.gov.cn/tjj/tjgn/ist.shtml"] } }
+]

@@ -1,0 +1,36 @@
+{
+  "name": "population-platform-server",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "collect": "node src/cli/collect.js",
+    "status": "node src/cli/status.js",
+    "review": "node src/cli/review.js",
+    "audit:portals": "node src/cli/audit-portals.js",
+    "audit:portals:unhealthy": "node src/cli/audit-portals.js --unhealthy",
+    "collect:provincial-annual": "node src/cli/collect-provincial-annual.js",
+    "review:provincial-annual": "node src/cli/review-provincial-annual.js",
+    "backup": "node src/cli/backup.js",
+    "verify:backup": "node src/cli/verify-backup.js",
+    "test": "node --test test/*.test.js",
+    "test:postgres": "node --test integration/postgres.test.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "csv-parse": "^7.0.1",
+    "exceljs": "^4.4.0",
+    "pdf-parse": "^2.4.5",
+    "pg": "^8.22.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@embedded-postgres/windows-x64": "17.10.0-beta.17",
+    "pdfkit": "^0.19.1"
+  }
+}

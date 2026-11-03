@@ -1,0 +1,10 @@
+packages:
+  - server
+
+allowBuilds:
+  '@embedded-postgres/windows-x64': true
+  embedded-postgres: false
+  esbuild: true
+onlyBuiltDependencies:
+  - '@embedded-postgres/windows-x64'
+  - esbuild

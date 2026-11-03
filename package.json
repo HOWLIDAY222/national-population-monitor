@@ -1,0 +1,29 @@
+{
+  "name": "national-census-command-center",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "dev:web": "vite --host 127.0.0.1",
+    "dev:server": "pnpm --dir server dev",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test:server": "pnpm --dir server test",
+    "test:postgres": "pnpm --dir server test:postgres",
+    "test:web": "node --test src/data/populationViewModel.test.js",
+    "audit:portals": "pnpm --dir server audit:portals",
+    "check": "pnpm test:server && pnpm test:postgres && pnpm test:web && pnpm build"
+  },
+  "dependencies": {
+    "echarts": "^5.6.0",
+    "echarts-for-react": "^3.0.2",
+    "lucide-react": "^0.468.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.5.0",
+    "vite": "^7.0.0"
+  }
+}
